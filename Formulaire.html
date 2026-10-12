@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire d'assurance auto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> <u> Soumission d'assurance automobile </u></h1>
+        <p id="p1">
+            Merci de l'intérêt que vous portez à nos services d'assurance auto. Afin de vous proposer une couverture adaptée à vos besoins, veuillez remplir le formulaire ci-dessous avec les informations demandées. Ces détails nous aideront à vous fournir une soumission précise et personnalisée. Soyez assuré(e) que toutes les informations fournies resteront confidentielles et seront utilisées exclusivement pour l'évaluation de votre demande d'assurance.
+        </p>
+
+        <br>
+
+        <form id="formulaireSoumission">
+
+            <label for="genre">Quel est votre genre ?</label>
+            <select name="genre" id="genre" required>
+                <option value=""></option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="non-binaire">Non-binaire</option>
+            </select>
+
+                
+            <label for="dateNaissance">Quelle est votre date de naissance ?</label>
+            <input type="date" name="dateNaissance" id="dateNaissance"  required>
+            <span id="dateErreur">Date de naissance invalide.</span>
+                
+
+            <label for="valeurAchat">Quelle est la valeur d'achat de votre véhicule ?</label>
+            <input type="number" name="valeurAchat" min="0" max="1000000" id="valeurAchat"required>
+                
+
+            <label for="anneeFabrication">Quelle est l'année de fabrication de votre véhicule ?</label>
+            <input type="number" name="anneeFabrication" min="1999" max="2024" id="anneeFabrication" required>
+            <span id="anneeErreur">Date de fabrication invalide.</span>
+                
+
+            <label for="kilometre">Combien de kilomètres parcourez-vous par année ?</label>
+            <input type="number" name="kilometre" min="0" max="50000" id="kilometre" required>
+                
+
+            <label for="cameraRecul">Est-ce que votre véhicule possède une caméra de recul ?</label>
+            <select  name="cameraRecul" id="cameraRecul" required>
+                <option value=""></option>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+                
+
+            <label for="reclamations">Avez-vous fait des réclamations d'assurance auto dans les 6 dernières années? (oui/non) </label>
+            <select id="reclamations" name="reclamations" required>
+                <option value=""></option>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+        
+     
+            <div id="presenceReclamations">  
+                <label for="nbrReclamations">Combien de réclamations avez-vous faites ?</label>
+                <input type="number" name="nbrReclamations" min="1" max="4" id="nbrReclamations">
+                    
+                <div id="montantReclamations">                          
+                </div>
+            </div>
+
+
+            <div id="resultat">
+            </div>
+
+            <br>
+
+            <center>
+                <button type="submit" id="boutonCalcul">Calculer montant de l'assurance</button>
+            
+                <button type="reset" id="reinitialiser">Commencer une nouvelle soumission ?</button>
+            </center>
+
+        </form>  
+        
+    <script src="script.js"></script>
+    </body>
+</html>

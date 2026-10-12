@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#p1{
+    color: #F5F5DC;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #8B0000;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #F5F5DC;
+}
+
+#formulaireSoumission {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background:#F5F5DC; 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#presenceReclamations{
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #DA291C;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+button:hover {
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: darkgrey;
+}
+
+#resultat {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+    background-color:  #ffffff;;
+}
+
+span{
+    color : red;
+    display: none;
+}
